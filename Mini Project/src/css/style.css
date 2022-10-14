@@ -1,0 +1,130 @@
+:root {
+  --primary-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  text-align: center;
+}
+
+.btn {
+  color: whit;
+  background: var(--primary-color);
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 50px 12px;
+}
+
+.money-img {
+  width: 150px;
+}
+
+.currency {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.currency select {
+  padding: 10px 20px 10px 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid #dedede;
+  font-size: 16px;
+}
+
+.currency input {
+  border: 0;
+  background: transparent;
+  font-size: 30px;
+  text-align: right;
+}
+
+.swap-rate-container {
+  size: px;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  align-content: left;
+  width: 431px;
+}
+.swap{
+  padding: 5px 5px 5px 5px;
+  position: relative;
+  left: px;
+  font-size: 20px;
+}
+
+.rate {
+  color: var(--primary-color);
+  font-size: 0px;
+  padding: 0 10px;
+}
+
+select:focus, input:focus, button:focus {
+  outline: 0;
+}
+
+.btn-hv {
+  background-color: #343A40;
+  border: none;
+  color: white;
+  text-align: center;
+  transition: 0.5s;
+  border: #000000;
+}
+
+.btn-hv:hover {
+  background-color: white;
+  color: #343A40;
+}
+
+@media (max-width: 600px) {
+  .currency input {
+    width: 200px;
+  }
+}
+
+
+.ifont{
+  color: white
+}
+
+#sourceDate{
+  color: black;
+}
+
+.source{
+  background-color: rgb(52,58,64);
+  width: 50vh;
+  padding: 10px 20px 10px 10px;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
