@@ -43,11 +43,11 @@ p {
 }
 
 .button {
-  padding: 40px 0;
+  padding: 30px 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  left: 500px;
+  left: 50px;
   border-color: #343A40;
   border-width: 5px;
   border-radius: 10px;
@@ -59,7 +59,7 @@ p {
   -webkit-appearance: none;
   appearance: none;
   border: 1px solid #dedede;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .button input {
@@ -120,7 +120,8 @@ select:focus, input:focus, button:focus {
 }
 
 .time{
-  height: 150px;
+  height: 80px;
+  width: 300px;
   text-align: center;
   border-radius: 70px;
   border-color: #343A40;
@@ -131,5 +132,77 @@ select:focus, input:focus, button:focus {
   font-family: "Lucida Console", "Courier New", monospace;
 }
 
+#sourceDate{
+  font-size: large ;
+}
+
+.time-header{
+  text-align: center;
+}
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+}
+th { 
+
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+}
+@media screen and (min-width: 480px) {
+  body {
+  }
+}
 
 
+.td{
+  color: #ccc;
+}
