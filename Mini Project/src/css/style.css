@@ -30,7 +30,7 @@ p {
 }
 
 .btn {
-  color: whit;
+  color: white;
   background: var(--primary-color);
   cursor: pointer;
   border-radius: 5px;
@@ -42,14 +42,18 @@ p {
   width: 150px;
 }
 
-.currency {
+.button {
   padding: 40px 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  left: 500px;
+  border-color: #343A40;
+  border-width: 5px;
+  border-radius: 10px;
 }
 
-.currency select {
+.button select {
   padding: 10px 20px 10px 10px;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -58,7 +62,7 @@ p {
   font-size: 16px;
 }
 
-.currency input {
+.button input {
   border: 0;
   background: transparent;
   font-size: 30px;
@@ -115,16 +119,17 @@ select:focus, input:focus, button:focus {
   color: white
 }
 
-#sourceDate{
-  color: black;
+.time{
+  height: 150px;
+  text-align: center;
+  border-radius: 70px;
+  border-color: #343A40;
 }
 
-.source{
-  background-color: rgb(52,58,64);
-  width: 50vh;
-  padding: 10px 20px 10px 10px;
-  padding: 40px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+#result{
+
+  font-family: "Lucida Console", "Courier New", monospace;
 }
+
+
+
