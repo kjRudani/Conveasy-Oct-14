@@ -24,11 +24,11 @@
             font-size: 0.75rem;
         }
 
-        .big td {
+        /* .big td {
             font-size: 1.25rem;
             font-family: monospace;
             color: white;
-        }
+        } */
 
 
         /* EOS */
@@ -68,22 +68,25 @@
             </div>
         </nav>
     </header>
+   <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/kbtmbyzy.json"
+    trigger="hover"
+    colors="primary:#ffffff,secondary:#ffffff"
+    style="width:250px;height:250px">
+</lord-icon>
+        <h1>
+            Time zone converter
+        </h1>
     <div style="overflow-y: auto;">
         <table>
             <tbody>
                 <tr>
-                    <td colspan="3">
-                        <div class="time-header">
-                            <h2 style="color: white;">
-                                Time zone converter
-                            </h2>
-                        </div>
-                    </td>
                 </tr>
                 <tr class="big">
-                    <td>Source time</td>
-                    <td>Source time zone</td>
-                    <td>Destination time zone</td>
+                    <td class="notation">Source time</td>
+                    <td class="notation">Source time zone</td>
+                    <td class="notation">Destination time zone</td>
                 </tr>
                 <tr>
                     <td><input placeholder="2022-09-01 23:00:00" id="sourceDate"></td>
@@ -971,7 +974,10 @@
                     </td>
                 </tr>
                 <tr class="big">
-                    <td colspan="3" id="result">2022-10-14 15:12:33</td>
+                    <div id="notation">
+                        <td colspan="3" style="color: white; font-size: 50px; font-family: 'Lucida Console', 'Courier New', monospace; border-left: 30px; border-radius: 7cm;" id="result">2022-10-14 15:12:33</td>
+                    </div>
+                    
                 </tr>
                 <tr class="small">
                     <td colspan="3" id="error"></td>
