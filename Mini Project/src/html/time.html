@@ -68,6 +68,34 @@
             </div>
         </nav>
     </header>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+<title>Document</title>
+<h1> Time is <span id="time"> </span></h1>
+<script src="index.js">   </script>
+</head>
+<body>
+</body>
+</html>
+<script>
+     `use strict`
+var datetime = new Date();
+console.log(datetime);
+document.getElementById("time").textContent = datetime; //it will print on html page
+`use strict`;
+function refreshTime() {
+  const timeDisplay = document.getElementById("time");
+  const dateString = new Date().toLocaleString();
+  const formattedString = dateString.replace(", ", " - ");
+  timeDisplay.textContent = formattedString;
+}
+  setInterval(refreshTime, 1000);
+
+</script>
    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
 <lord-icon
     src="https://cdn.lordicon.com/kbtmbyzy.json"
@@ -78,7 +106,7 @@
         <h1>
             Time zone converter
         </h1>
-    <div style="overflow-y: auto;">
+    <div>
         <table>
             <tbody>
                 <tr>
@@ -531,8 +559,7 @@
                     <td>
                         <div class="container">
                             <div class="button">
-                                <select id="destTz" style="border-color:#343A40;border-width: 5px;" id="currency-two"
-                                    class=" currency source btn-dark time">
+                                <select id="destTz" style="border-color:#343A40;border-width: 5px;" id="currency-two" class=" currency source btn-dark time">
                                     <option value="Africa/Abidjan">Africa/Abidjan</option>
                                     <option value="Africa/Accra">Africa/Accra</option>
                                     <option value="Africa/Addis_Ababa">Africa/Addis_Ababa</option>
@@ -973,9 +1000,9 @@
                         <h3 style="color: white;">Result</h3>
                     </td>
                 </tr>
-                <tr class="big">
+                <tr class="big-result big">
                     <div id="notation">
-                        <td colspan="3" style="color: white; font-size: 50px; font-family: 'Lucida Console', 'Courier New', monospace; border-left: 30px; border-radius: 7cm;" id="result">2022-10-14 15:12:33</td>
+                        <td colspan="3" style="color: white;" id="result">2022-10-14 15:12:33</td>
                     </div>
                     
                 </tr>

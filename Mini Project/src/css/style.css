@@ -127,10 +127,7 @@ select:focus, input:focus, button:focus {
 }
 
 #result{
-  border-color: crimson;
-  border-width: 2;
-  text-align: center;
-  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: coral   ;
 }
 
 #sourceDate{
@@ -152,63 +149,8 @@ select:focus, input:focus, button:focus {
   top:2px;
 }
 
-table { 
-  width: 100%; 
-  border-collapse: collapse; 
-}
-/* Zebra striping */
-tr:nth-of-type(odd) { 
-}
-th { 
-
-  font-weight: bold; 
-}
 
 
-/* 
-Max width before this PARTICULAR table gets nasty
-This query will take effect for any screen smaller than 760px
-and also iPads specifically.
-*/
-@media 
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr { 
-		display: block; 
-	}
-	
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-	
-	
-	td { 
-		/* Behave  like a "row" */
-		border: none;
-		position: relative;
-		padding-left: 50%; 
-	}
-	
-	td:before { 
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
-		white-space: nowrap;
-	}
-}
-@media screen and (min-width: 480px) {
-  body {
-  }
-}
 
 
 .td{
@@ -228,4 +170,10 @@ only screen and (max-width: 760px),
   border-width: 20;
   border-color: blue;
   border-radius: 1cm;
+}
+
+.big-result
+{
+  display: inline;
+  margin-left: 133%;
 }
