@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +11,7 @@
   <style>
 
     body{
-      background-color: #000;
+      background-color: #FFF1CF;
     }
     .bd-placeholder-img {
       font-size: 1.125rem;
@@ -54,6 +53,10 @@
       overflow-y: hidden;
     }
 
+    .navbar-custom{
+      background-color:#015668;
+     
+    }
     .nav-scroller .nav {
       display: flex;
       flex-wrap: nowrap;
@@ -65,8 +68,9 @@
       -webkit-overflow-scrolling: touch;
     }
 
+  
     h2{
-      color: antiquewhite;
+      color: white;
     }
 
     .lead{
@@ -127,9 +131,9 @@
   <body>
 
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="padding-left: 20%; padding-right:20%">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top navbar-custom" style="padding-left: 20%; padding-right:20%">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Conveasy</a>
+          <a class="navbar-brand" style="color:#FFD369" href="#"><img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">Conveasy</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -137,13 +141,13 @@
           <div class="collapse navbar-collapse"  id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                <a class="nav-link active" style="color:#FFD369" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" style="color:#FFD369" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Contact Us</a>
+                <a class="nav-link" style="color:#FFD369">Contact Us</a>
               </li>
             </ul>
             </div>
@@ -184,15 +188,15 @@
         
         <div  style="justify-content: center;"class="row row1 featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">No idea what would be the time there?<span class="text-muted">
+            <h2 class="featurette-heading fw-normal lh-1" style="color:#263F44">No idea what would be the time there?<span class="text-muted">
               <a href="time.html">Here's our Time Convertor.</a></span></h2>
-            <p class="lead">Convert times from your location, or any other location, to a time zone you wish.</p>
+            <p class="lead" style="color:#263F44">Convert times from your location, or any other location, to a time zone you wish.</p>
           </div>
           <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
             <lord-icon
                 src="https://cdn.lordicon.com/kbtmbyzy.json"
                 trigger="hover"
-                colors="primary:#ffffff,secondary:#08a789"
+                colors="primary:#411F1F,secondary:#015668"
                 style="width:250px;height:250px">
             </lord-icon>
         </div>
@@ -201,9 +205,9 @@
 
         <div style="justify-content: center;" class="row featurette">
           <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading fw-normal lh-1">You may need to keep your pockets ready! <span
-                class="text-muted"><a href="curr.html">Here's our Currency Convertor.</a></span></h2>
-            <p class="lead">Convert any amount of money from your home country's currency to that of a desired country
+            <h2 class="featurette-heading fw-normal lh-1" style="color:#263F44">You may need to keep your pockets ready! <span
+                class="text-muted"><a href="curr.html" >Here's our Currency Convertor.</a></span></h2>
+            <p class="lead" style="color:#263F44">Convert any amount of money from your home country's currency to that of a desired country
               (Yes, we've got you covered with all currencies that exist).</p>
           </div>
           <div style="display: flex; flex-direction: row;" class=" order-md-1">
@@ -211,7 +215,7 @@
 <lord-icon
     src="https://cdn.lordicon.com/qhviklyi.json"
     trigger="hover"
-    colors="primary:#ffffff,secondary:#08a88a"
+    colors="primary:#FFCB42,secondary:#015668"
     style="width:250px;height:250px">
 </lord-icon>
           </div>
@@ -220,19 +224,18 @@
         <hr style="height:2px; width:100%; border-width:0; color:white; background-color:white">
 
         <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading fw-normal lh-1">Or, what's better than either? <span
-                class="text-muted"><a href="#">Both.</a></span></h2>
-            <p class="lead">Convert both time and currency value for the desired country/region.</p>
+          <div class="col" style="text-align:center">
+            <h2 style="color:#263F44">How are economies working around the world?<h2>
+            <p class="lead" style="color:#263F44">Have a look at where the world stands now.</p> 
           </div>
-          <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
-<lord-icon
+<!--           <script src="https://cdn.lordicon.com/xdjxvujz.js"></script> -->
+<!-- <lord-icon
     src="https://cdn.lordicon.com/gqzfzudq.json"
     trigger="hover"
     colors="primary:#ffffff,secondary:#08a789"
     state="loop"
     style="width:250px;height:250px">
-</lord-icon>
+</lord-icon> -->
         </div>
 
         <hr style="height:2px; width:100%; border-width:0; color:white; background-color:white">
@@ -245,7 +248,7 @@
       <!-- FOOTER -->
       <footer class="container">
         <p class="float-end" style="text-align:center;"><a href="#">Back to top</a></p>
-        <p style="text-align:center; color: whitesmoke">© 2022–2022 Conveasy, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p style="text-align:center; color:#263F44">© 2022–2022 Conveasy, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
       </footer>
     </main>
 
@@ -296,4 +299,3 @@
 	// ]]>
 </script>
 </body>
-<!-- Code injected
